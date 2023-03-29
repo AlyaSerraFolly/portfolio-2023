@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Base layout</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="scss/main.scss" />
+    <link rel="stylesheet" href="scss/style.scss" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/pageable@latest/dist/pageable.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="header-navigation">
+        <div onclick="myFunction()" id="burger">
+          <hr />
+        </div>
+        <div class="header-container">
+          <a class="nav-element" href="index.html">Accueil</a>
+          <a class="nav-element" href="video.html">Video & Motion</a>
+          <a class="nav-element" href="graphicdesign.html"
+            >Illustration & Graphic design</a
+          >
+          <a class="nav-element" href="about.html">About</a>
+          <a class="nav-element" href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="pg-wrapper">
+        <div id="container" class="pg-container">
+          <div data-anchor="page-1" id="page-1" class="pg-page pg-active">
+            <div class="container-category page1">
+              <h1>Hi</h1>
+            </div>
+          </div>
+          <div data-anchor="page-2" id="page-2" class="pg-page">
+            <div class="container-category page2">
+              <h1>2</h1>
+            </div>
+          </div>
+          <div data-anchor="page-3" id="page-3" class="pg-page">
+            <div class="container-category page3">
+              <h1>3</h1>
+            </div>
+          </div>
+          <div data-anchor="page-4" id="page-4" class="pg-page">
+            <div class="container-category page4">
+              <h1>4</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <block name="content"> </block>
+      <script src="https://unpkg.com/pageable@latest/dist/pageable.min.js"></script>
+      <script src="./js/app.js"></script>
+    </main>
+    <footer></footer>
+  </body>
+</html>
